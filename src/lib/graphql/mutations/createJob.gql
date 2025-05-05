@@ -1,0 +1,22 @@
+mutation CreateJob($input: CreateJobInput!) {
+    createJob(input: $input) {
+        success
+        message
+        code
+        result {
+            id
+            title
+            jobType
+            paymentType
+            salaryPerAnnum
+            jobHours
+            location
+            startDate
+            numberOfRoles
+            duties
+            requirements
+            published
+            clientId
+        }
+    }
+}

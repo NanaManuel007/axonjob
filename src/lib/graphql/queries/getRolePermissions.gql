@@ -1,0 +1,14 @@
+query GetRolePermissions($roleId: Long!) {
+  roles(where: { id: { eq: $roleId } }) {
+    items {
+      id
+      name
+      rolePermissions {
+        permissionName
+        permission {
+          description
+        }
+      }
+    }
+  }
+}

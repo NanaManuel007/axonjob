@@ -1,0 +1,23 @@
+mutation UpdateClient($input: UpdateClientInput!) 
+{
+  updateClient(input: $input) {
+    success
+    message
+    result {
+      id
+      companyName
+      ceoFirstName
+      ceoLastName
+      jobTitle
+      companyEmail
+      companyPhone
+      companyAddress
+      postalCode
+      registrationNumber
+      website
+      companyLocation
+      verificationStatus
+      dateJoined
+    }
+  }
+}

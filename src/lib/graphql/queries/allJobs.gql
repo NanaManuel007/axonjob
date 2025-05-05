@@ -1,0 +1,54 @@
+query AllJobs {
+  jobs(skip: null, take: null, where: null, order: null) {
+    totalCount
+    items {
+      clientId
+      createdAt
+      duties
+      id
+      jobHours
+      jobType
+      location
+      numberOfRoles
+      paymentType
+      published
+      requirements
+      salaryPerAnnum
+      startDate
+      status
+      title
+      updatedAt
+      assignments {
+        assignedAt
+        candidateId
+        jobId
+        status
+      }
+      client {
+        ceoFirstName
+        ceoLastName
+        companyAddress
+        companyEmail
+        companyLocation
+        companyLogo
+        companyName
+        companyPhone
+        createdAt
+        dateJoined
+        id
+        jobTitle
+        linkedIn
+        locationCoordinates
+        postalCode
+        registrationNumber
+        updatedAt
+        verificationStatus
+        website
+      }
+    }
+    pageInfo {
+      hasNextPage
+      hasPreviousPage
+    }
+  }
+}

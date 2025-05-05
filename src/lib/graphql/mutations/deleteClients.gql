@@ -1,0 +1,7 @@
+mutation DeleteClient($input: DeleteClientInput!) {
+    deleteClient(input: $input) {
+        success
+        message
+        code
+    }
+}

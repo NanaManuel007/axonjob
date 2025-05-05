@@ -1,0 +1,21 @@
+query AllRoles {
+  roles {
+    totalCount
+    items {
+      createdAt
+      description
+      id
+      isActive
+      name
+      updatedAt
+      rolePermissions {
+        permissionName
+        roleId
+        permission {
+          description
+          name
+        }
+      }
+    }
+  }
+}

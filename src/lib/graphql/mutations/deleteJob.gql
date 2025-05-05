@@ -1,0 +1,7 @@
+mutation DeleteJob($id: Long!) {
+  deleteJob(input: { id: $id }) {
+    code
+    message
+    success
+  }
+}

@@ -1,0 +1,7 @@
+mutation AssignPermissionsToRole($input: AssignPermissionsInput!) {
+  assignPermissions(input: $input) {
+    code
+    message
+    success
+  }
+}

@@ -1,0 +1,24 @@
+mutation CreateClient($input: CreateClientRequestInput!) {
+  createClient(input: { input: $input }) {
+    code
+    message
+    success
+    result {
+      id
+      companyName
+      companyEmail
+      companyPhone
+      companyAddress
+      companyLocation
+      companyLogo
+      ceoFirstName
+      ceoLastName
+      jobTitle
+      postalCode
+      registrationNumber
+      website
+      linkedIn
+      locationCoordinates
+    }
+  }
+}

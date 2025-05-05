@@ -1,0 +1,7 @@
+mutation VerifyClient($input: ClientVStatusInput!) {
+  clientVStatus(input: $input) {
+    code
+    message
+    success
+  }
+}

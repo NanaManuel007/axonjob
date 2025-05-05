@@ -1,0 +1,18 @@
+mutation UpdateUser($id: Long!, $input: UpdateUserRequestInput!) {
+  updateUser(input: { 
+    id: $id, 
+    input: $input 
+  }) {
+    code
+    message
+    success
+    result {
+      createdAt
+      email
+      id
+      roleId
+      roleName
+      updatedAt
+    }
+  }
+}

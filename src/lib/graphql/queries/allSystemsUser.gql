@@ -1,0 +1,29 @@
+query AllUser {
+  users(skip: null, take: null, where: null, order: null) {
+    items {
+      createdAt
+      email
+      id
+      password
+      roleId
+      updatedAt
+      role {
+        createdAt
+        description
+        id
+        isActive
+        name
+        updatedAt
+        rolePermissions {
+          permissionName
+          roleId
+        }
+      }
+    }
+    pageInfo {
+      hasNextPage
+      hasPreviousPage
+    }
+    totalCount
+  }
+}

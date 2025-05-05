@@ -1,0 +1,9 @@
+mutation UpdateRole($input: CreateRoleRequestInput!, $id: Long!) {
+  updateRole(
+    input: { id: $id, input: $input }
+  ) {
+    code
+    message
+    success
+  }
+}

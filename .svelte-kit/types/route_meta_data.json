@@ -1,0 +1,74 @@
+{
+	"/": [
+		"src/routes/+page.js",
+		"src/routes/+layout.js",
+		"src/routes/+layout.server.js",
+		"src/routes/+layout.js",
+		"src/routes/+layout.server.js"
+	],
+	"/private": [
+		"src/routes/private/+layout.js",
+		"src/routes/+layout.js",
+		"src/routes/+layout.server.js"
+	],
+	"/private/all_applications": [
+		"src/routes/private/all_applications/+page.js",
+		"src/routes/private/+layout.js",
+		"src/routes/+layout.js",
+		"src/routes/+layout.server.js"
+	],
+	"/private/all_bookings": [
+		"src/routes/private/all_bookings/+page.js",
+		"src/routes/private/+layout.js",
+		"src/routes/+layout.js",
+		"src/routes/+layout.server.js"
+	],
+	"/private/all_candidates": [
+		"src/routes/private/all_candidates/+page.js",
+		"src/routes/private/+layout.js",
+		"src/routes/+layout.js",
+		"src/routes/+layout.server.js"
+	],
+	"/private/all_candidates/candidate_details": [
+		"src/routes/+layout.js",
+		"src/routes/+layout.server.js"
+	],
+	"/private/all_candidates/candidate_details/[id]": [
+		"src/routes/private/all_candidates/candidate_details/[id]/+page.js",
+		"src/routes/+layout.js",
+		"src/routes/+layout.server.js"
+	],
+	"/private/all_clients": [
+		"src/routes/private/all_clients/+page.js",
+		"src/routes/private/+layout.js",
+		"src/routes/+layout.js",
+		"src/routes/+layout.server.js"
+	],
+	"/private/all_clients/clients_details": [
+		"src/routes/+layout.js",
+		"src/routes/+layout.server.js"
+	],
+	"/private/all_clients/clients_details/[id]": [
+		"src/routes/private/all_clients/clients_details/[id]/+page.js",
+		"src/routes/+layout.js",
+		"src/routes/+layout.server.js"
+	],
+	"/private/all_users": [
+		"src/routes/private/all_users/+page.js",
+		"src/routes/private/+layout.js",
+		"src/routes/+layout.js",
+		"src/routes/+layout.server.js"
+	],
+	"/private/home": [
+		"src/routes/private/home/+page.js",
+		"src/routes/private/+layout.js",
+		"src/routes/+layout.js",
+		"src/routes/+layout.server.js"
+	],
+	"/private/[...404]": [
+		"src/routes/private/[...404]/+page.js",
+		"src/routes/private/+layout.js",
+		"src/routes/+layout.js",
+		"src/routes/+layout.server.js"
+	]
+}

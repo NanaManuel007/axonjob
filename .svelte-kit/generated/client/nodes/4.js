@@ -1,0 +1,1 @@
+export { default as component } from "../../../../src/routes/private/all_clients/clients_details/+layout@.svelte";

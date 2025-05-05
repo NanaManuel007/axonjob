@@ -1,0 +1,20 @@
+query UserDataAndPermissions($userId: Long!) {
+  users(where: { id: { eq: $userId } }) {
+    items {
+      role {
+        createdAt
+        description
+        isActive
+        id
+        name
+        rolePermissions {
+          permissionName
+          roleId
+        }
+      }
+      createdAt
+      email
+      id
+    }
+  }
+}

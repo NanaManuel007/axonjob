@@ -1,0 +1,9 @@
+query AllPermission {
+  permissions {
+    totalCount
+    items {
+      description
+      name
+    }
+  }
+}

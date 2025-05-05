@@ -1,0 +1,44 @@
+query AllCandidates {
+  candidates(skip: null, take: null, where: null, order: null) {
+    totalCount
+    items {
+      createdAt
+      email
+      experience
+      id
+      name
+      phone
+      skills
+      updatedAt
+      verified
+      assignments {
+        assignedAt
+        candidateId
+        jobId
+        status
+        job {
+          clientId
+          createdAt
+          duties
+          id
+          jobHours
+          jobType
+          location
+          numberOfRoles
+          paymentType
+          published
+          requirements
+          salaryPerAnnum
+          startDate
+          status
+          title
+          updatedAt
+        }
+      }
+    }
+    pageInfo {
+      hasNextPage
+      hasPreviousPage
+    }
+  }
+}

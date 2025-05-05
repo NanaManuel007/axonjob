@@ -1,0 +1,7 @@
+mutation DeleteAssignment($input: DeleteAssignmentInput!) {
+  deleteAssignment(input: $input) {
+    code
+    message
+    success
+  }
+}

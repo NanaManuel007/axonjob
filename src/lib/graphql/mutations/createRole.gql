@@ -1,0 +1,16 @@
+mutation AddRole($input: CreateRoleInput!) {
+  createRole(input: $input) {
+    code
+    message
+    success
+    result {
+      id
+      name
+      description
+      permissions
+      isActive
+      createdAt
+      updatedAt
+    }
+  }
+}

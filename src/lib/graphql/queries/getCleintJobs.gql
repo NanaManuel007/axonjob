@@ -1,0 +1,39 @@
+query GetClientJobs($filter: JobFilterInput!,$skip: Int!,$take:Int!)
+@cache(policy: NetworkOnly)
+ {
+    jobs(where: $filter, take: $take, skip: $skip, order: [ {
+       id: DESC
+    }]) {
+        totalCount
+        items {
+            id
+            title
+            location
+            jobType
+            status
+            createdAt
+            clientId
+            duties
+            jobHours
+            numberOfRoles
+            paymentType
+            requirements
+            published
+            salaryPerAnnum
+            startDate
+            updatedAt
+            assignments {
+                status
+                candidate {
+                    id
+                    name
+                    email
+                }
+            }
+        }
+        pageInfo {
+            hasNextPage
+            hasPreviousPage
+        }
+    }
+}

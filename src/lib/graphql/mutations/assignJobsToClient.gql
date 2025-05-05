@@ -1,0 +1,10 @@
+
+mutation AssignJobs($input: AssignJobInput!)
+ {
+  
+  assignJob(input: $input) {
+    success
+    message
+    code
+  }
+}

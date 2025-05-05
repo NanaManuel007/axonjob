@@ -1,0 +1,15 @@
+ query GetCandidates {
+  
+  candidates {
+    totalCount
+    items {
+      id
+      name
+      phone
+      skills
+      experience
+      verified
+      email
+    }
+  }
+}
